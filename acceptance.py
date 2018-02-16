@@ -33,7 +33,7 @@ caldb      = "prod2"
 irf        = "South_0.5h"
 labelsize  = 12
 
-outdir   = "./out/"
+outdir   = "./"
 modeldir = "./models/"
 
 fitspline = True                  # Fit the spline of just setup one according to model?
