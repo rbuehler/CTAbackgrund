@@ -446,8 +446,8 @@ def bisplinebkg():
     plt.ylabel("lg(Counts)",fontsize=labelsize)
     plt.tight_layout()
     
-    fig.savefig("./out/AcceptanceFit_2Dplots.png")
-    fig2.savefig("./out/AcceptanceFit_1Dplots.png")
+    fig.savefig(outdir+"/AcceptanceFit_2Dplots.png")
+    fig2.savefig(outdir+"./out/AcceptanceFit_1Dplots.png")
     
     #--------------------
     #3D plots
@@ -493,8 +493,8 @@ def plot3d(ax,xx,yy,zz,zlabel,cmin,cmax,cmap="nipy_spectral"):
             
 if __name__ == "__main__":
     
-    sim("cCrab")        # Simulate  point source with0.01 flux of Crab nebula
-    sim("bkg")          # Simulate CTA acceptance
-    show()              # Show the acceptance and shource counts
+    #sim("cCrab")        # Simulate  point source with0.01 flux of Crab nebula
+    #sim("bkg")          # Simulate CTA acceptance
+    #show()              # Show the acceptance and shource counts
     bisplinebkg()        # Fit acceptance and show fit results
 
