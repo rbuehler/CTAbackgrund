@@ -36,7 +36,7 @@ labelsize  = 12
 outdir   = "./"
 modeldir = "./models/"
 
-fitspline = True                  # Fit the spline of just setup one according to model?
+fitspline = False               # Fit the spline of just setup one according to model?
 bknots    = False                  # Should background knots be inserted?
 lgspline  = False                   # Should the spline internally work in log space?
 
@@ -447,7 +447,7 @@ def bisplinebkg():
     plt.tight_layout()
     
     fig.savefig(outdir+"/AcceptanceFit_2Dplots.png")
-    fig2.savefig(outdir+"./out/AcceptanceFit_1Dplots.png")
+    fig2.savefig(outdir+"/AcceptanceFit_1Dplots.png")
     
     #--------------------
     #3D plots
